@@ -26,7 +26,7 @@ class UserModel {
 
 class AppConfig: Config {
     
-    func configure() {
+    func configure(injector: InjectorProtocol) {
         let someUser = UserModel(firstName: "Gabriel", lastName: "Peart")
         let flashInjectionKey = "flash"
         let someOtherUser = UserModel(firstName: "Barry", lastName: "Allen")

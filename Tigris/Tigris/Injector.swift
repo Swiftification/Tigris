@@ -8,8 +8,6 @@
 
 import Foundation
 
-public let injector: InjectorProtocol = Injector()
-
 enum InjectorError: ErrorType {
     case InvalidKey
     case InjectionInProcesss

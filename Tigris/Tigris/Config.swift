@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol Config {
-    func configure()
+    func configure(injector: InjectorProtocol)
 }

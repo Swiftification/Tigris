@@ -38,7 +38,7 @@ class Context: ContextProtocol {
     
     func configure(configs: Config...) -> ContextProtocol {
         for config in configs {
-            config.configure()
+            config.configure(injector)
         }
         return self
     }
